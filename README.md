@@ -16,6 +16,12 @@ nestedSortable jQuery Plugin 2.0
 
 ## Usage
 
+### Basic
+
+Copy NestedSortableControl.latte, NestedSortableControl.php to libs or components folder folder.
+
+Copy jquery.acidclick.nestedSortableControl.js to js folder in document root.
+
 ### Presenter
 
 ```php
@@ -59,4 +65,28 @@ class NestedsortablecontrolPresenter extends BasePresenter
 
 }
 ?>
+```
+
+### View 
+
+```html
+{block head}
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
+	<style>
+		ol.sortable li div{
+			border:1px solid #666;
+			background-color:whiteSmoke;
+			padding:10px;
+			margin:10px 0;
+		}
+	</style>
+{/block}
+{block scripts}
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+	<script src="{$basePath}/js/jquery.mjs.nestedSortable.js"></script>
+	<script src="{$basePath}/js/jquery.acidclick.nestedSortableControl.js"></script>
+{/block}
+{block content}
+	{widget nestedSortableControl}
+{/block}
 ```
