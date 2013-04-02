@@ -1,0 +1,6 @@
+<li n:foreach="$records as $index => $record" id="list_{$record->{$control->key}}">
+	<div>{$record->$value} </div>
+	<ol n:if="isset($record->{$children})"> 
+		{include 'list.latte','records'=>$record->{$children}}
+	</ol>
+</li>
