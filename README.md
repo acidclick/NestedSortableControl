@@ -2,6 +2,8 @@
 
 Nette Control for http://mjsarfatti.com/sandbox/nestedSortable/
 
+Demo - http://playground.acidclick.cz/nestedsortablecontrol/
+
 ## License
 
 MIT
