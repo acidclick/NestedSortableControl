@@ -63,6 +63,7 @@ class NestedSortableControl extends Control {
 
 	protected function createComponentForm($name){
 		$form = new \Nette\Application\UI\Form($this,$name);
+		$form->getElementPrototype()->class = 'nested-sortable-control-form';
 		$form->addHidden('hierarchy');
 		$form->addSubmit('saveBtn','Uložit');
 		$control = $this;

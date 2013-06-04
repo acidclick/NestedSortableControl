@@ -89,6 +89,6 @@ class NestedsortablecontrolPresenter extends BasePresenter
 	<script src="{$basePath}/js/jquery.acidclick.nestedSortableControl.js"></script>
 {/block}
 {block content}
-	{control nestedSortableControl}
+	{widget nestedSortableControl}
 {/block}
 ```
